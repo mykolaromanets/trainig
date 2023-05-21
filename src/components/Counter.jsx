@@ -1,5 +1,7 @@
 import React from 'react';
+import Controls from './Controls';
 import './Counter.css';
+import Value from './Value';
 
 class Counter extends React.Component {
   static defaultProps = {
@@ -25,23 +27,11 @@ class Counter extends React.Component {
   render() {
     return (
       <div className="Counter">
-        <span className="Counter__value">{this.state.value}</span>
-        <div className="Counter__controls">
-          <button
-            type="button"
-            className="Counter__button"
-            onClick={this.handleIncrement}
-          >
-            Увеличить
-          </button>
-          <button
-            type="button"
-            className="Counter__button"
-            onClick={this.handleDecrement}
-          >
-            Уменьшить
-          </button>
-        </div>
+        <Value value={this.state.value} />
+        <Controls
+          onIncrement={this.handleIncrement}
+          onDecrement={this.handleDecrement}
+        />
       </div>
     );
   }

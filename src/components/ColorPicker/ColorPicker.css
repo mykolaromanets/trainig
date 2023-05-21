@@ -1,0 +1,29 @@
+.ColorPicker {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.ColorPicker__title {
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+.ColorPicker__option {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.ColorPicker__option__active {
+  transform: scale(1.2);
+}
