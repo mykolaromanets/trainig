@@ -17,9 +17,7 @@ export const EmployeeCard = ({
             <h2>{name}</h2>
             <h3>{email}</h3>
             <h4>{bio} </h4>
-            <SkillsList>
-                {skills.map(skill => (
-                    <skill 
-            </SkillsList>
+
             
-    )
+            )
+        })}
